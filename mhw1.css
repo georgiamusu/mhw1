@@ -1,0 +1,246 @@
+#titolo {
+  font-size:50px;
+  
+}
+body{
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: PapayaWhip;
+}
+header nav {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  }
+header {
+  color: white;
+  background-image: url(https://i.pinimg.com/originals/f1/b6/fd/f1b6fd315ca1c641b856c4483b7d122b.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+header::before{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0,0,0,0.4);
+}
+header h1{
+  font-weight: normal;
+  text-align: center;
+  font-size: 35px;
+  line-height: 2;
+  margin-top: 10%;
+  z-index: 1;
+}
+a{
+  cursor:pointer;
+  
+}
+header h1 a {
+  font-size: 25px;
+  
+}
+h1 a.button {
+  border-radius: 100px;
+  border: 2px solid white;
+  padding: 8px;
+  background-color: rgba(244, 164, 96, 0.7);
+  cursor:pointer; 
+  font-size: 15px;
+  font-family: Georgia, serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  
+}
+h1 a.button:hover {
+  background-color: rgb(255, 160, 122);
+  color:white;
+  
+}
+#links a {
+  margin-left:10px;
+  padding:10px;
+}
+
+#main h1{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:auto;
+  font-size: 50px;
+}
+#main em {
+  font-size: 30px;
+}
+#main p {
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom:80px;
+  width: 80%; 
+  font-size: 20px;
+  line-height: 1.5;
+}
+section{
+    text-align:center;
+  margin: 90px 100px; 
+  }
+article {
+  text-align:center;
+}
+
+p {
+  line-height: 20px;
+}
+#flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction:column;
+  margin:70px 100px;
+  border: 2px solid black;
+  
+}
+.flex-item{
+  margin: 80px 100px;
+  position: relative;
+  border: 2px solid black;
+  background-color: NavajoWhite;
+}
+
+.flex-item img{
+  width:30%;
+  
+}
+.flex-item h1 {
+  color: Teal;
+  font-weight: bold;
+  font: 40px Georgia, serif;
+  text-align: center;  
+}
+.flex-item p {
+  text-align: left;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 3%;
+  margin-left:20%;
+  margin-right: 20%
+}
+
+footer {
+  background-color: rgb(31,31,31);
+  color: rgba(255, 255, 255, .8);
+  padding: 50px;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, .4);
+}
+#menu {
+  display: none;
+  text-align:right;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  text-align: right
+}
+header h1 strong, a.button, footer address, #main p{font-family: 'open sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  #flex-container {
+    flex-direction: column;
+    font-size:1em;
+    margin: 40px 10px;
+    
+  }
+}
+@media (max-width:500px){
+  .flex-item  {
+    margin: 9px 7px;
+    font-size: 1em;
+  }
+  .flex-item p {
+    font-size: 1em;
+    text-align: left;
+  }
+  .flex-item h1 {
+    font-size: 2em;
+    
+  }
+  .flex-item img {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 0.5em;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media (max-width: 500px) {
+	#titolo {
+	  font-size: 1em;
+    margin-bottom: 1em;
+	}
+}
+@media (max-width: 500px) {
+  #main p {
+    width: 100%;
+    margin-bottom: 2em;
+    font-size:1em
+  }
+}
+@media (max-width: 500px){
+  #main h1, #main em {
+    font-size: 2em;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    margin: 40px 10px;
+  }
+}
